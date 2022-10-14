@@ -9,7 +9,7 @@ app.set("view engine", "handlebars");
 app.set("views", "./views");
 
 app.get("/", (req, res, next) => {
-  const planets = ["Earth", "Mercury", "Pluto", "Sun"];
+  const planets = ["Earth", "Mercury", "Sun"];
   res.render("planets", { planets: planets });
 });
 
